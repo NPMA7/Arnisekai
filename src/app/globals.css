@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    width: auto;
+    height: auto;
+    transition: .3 ease all;
+    -webkit-transition: .3 ease all;
+    -moz-transition: .3 ease all;
+    -ms-transition: .3 ease all;
+    -o-transition: .3 ease all;
+}
+#img{
+    width: 50%;
+    height: auto;
+    min-height: 50px;
+    max-height: 100px;
+    transition: .3 ease all;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+#highlight {
+    width: 30vw;
+    height: 600px;
+    right: 1vw;
+    filter: brightness(50%);
+    overflow: hidden;
+    padding: 50px;
+    -webkit-filter: brightness(50%);
+}
+@media screen and (max-width:770px) {
+    #highlight, #img{
+        display: none;
+    }
+    
+}

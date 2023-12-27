@@ -1,0 +1,13 @@
+
+const DonghuaHome = async () => {
+  const response = await fetch(`
+    ${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete
+    `);
+  const anime = await response.json();
+
+  return (
+    <div className="">Donghua</div>
+  );
+};
+
+export default DonghuaHome;
