@@ -1,4 +1,6 @@
 {
-  "/not-found": "app/not-found.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/test/page": "app/test/page.js",
+  "/anime/page": "app/anime/page.js",
+  "/donghua/page": "app/donghua/page.js"
 }

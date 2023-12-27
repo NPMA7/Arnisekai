@@ -22,12 +22,12 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <a href="/anime" className="hover:underline">
                     Anime
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:underline">
+                  <a href="/donghua" className="hover:underline">
                     Donghua
                   </a>
                 </li>

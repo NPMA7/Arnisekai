@@ -1,3 +1,5 @@
+import Maintenance from "@/components/error/Maintenance";
+
 
 const DonghuaHome = async () => {
   const response = await fetch(`
@@ -6,7 +8,9 @@ const DonghuaHome = async () => {
   const anime = await response.json();
 
   return (
-    <div className="">Donghua</div>
+    <div className="">
+      <Maintenance/>
+    </div>
   );
 };
 

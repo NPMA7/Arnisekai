@@ -1,8 +1,10 @@
-import Highlight from "@/components/main/Highlight"
-import SearchBar from "@/components/header/SearchBar"
-
+import Maintenance from "@/components/error/Maintenance"
 const Test = async() => {
-
+    return (
+       <div className="">
+         <Maintenance/>
+       </div>
+    )
 }
 
 export default Test
