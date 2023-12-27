@@ -9,8 +9,9 @@ const Home = async () => {
 
   return (
     <div className="">
+
       <div id="highlight">
-        <div id="anime-highlight" className="grid grid-cols-5 absolute mt-80">
+        <div id="anime-highlight" className=" md:grid hidden  grid-cols-5 absolute mt-80">
           {anime.data.map((data) => {
             return (
               <Highlight title_anime={data.title} poster_anime={data.poster} />
@@ -19,7 +20,7 @@ const Home = async () => {
         </div>
         <div
           id="donghua-highlight"
-          className="absolute md:top-96 md:mt-96 lg:right-10 right-1 "
+          className="absolute md:block hidden md:top-96 md:mt-96 lg:right-10 right-1 "
         >
           <img
             className="md:mt-60 "
@@ -28,7 +29,7 @@ const Home = async () => {
           ></img>
         </div>
       </div>
-      <div className=" bg-gray-900 md:pt-24 p-20 ">
+      <div className=" md:pt-24 p-20 ">
         <div className="my-20  md:w-3/5 w-full">
           <SearchBar />
         </div>

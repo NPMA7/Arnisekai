@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 img {
     width: auto;
     height: auto;
@@ -12,6 +11,8 @@ img {
     -ms-transition: .3 ease all;
     -o-transition: .3 ease all;
 }
+
+/* home page */
 #img{
     width: 50%;
     height: auto;
@@ -23,7 +24,6 @@ img {
     -ms-transition:;
     -o-transition:;
 }
-
 #anime-highlight {
     width: 30vw;
     height: 600px;
@@ -40,9 +40,22 @@ img {
     -webkit-filter:opacity(20%);
 }
 
+
+/* end home page */
+#grid-ongoing-anime-home {
+    height: 91em;
+
+}
+#ongoing-home-image  {
+    width: 300px;
+    height: 200px;
+}
+
+/* end anime page */
+
+
 @media screen and (max-width:767px) {
-    #anime-highlight,#donghua-highlight, #img{
-        display: none;
-    }
-    
+
+  
+
 }
