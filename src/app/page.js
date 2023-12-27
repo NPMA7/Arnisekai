@@ -1,5 +1,5 @@
 import SearchBar from "@/components/header/SearchBar";
-import Highlight from "@/components/main/Highlight";
+import Highlight from "@/components/main/sidebar/Highlight";
 
 const Home = async () => {
   const responses = await fetch(

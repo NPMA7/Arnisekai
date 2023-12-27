@@ -1,9 +1,12 @@
 import Maintenance from "@/components/error/Maintenance"
-const Test = async() => {
+import JadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime"
+import AnimeHome from "../anime/page"
+
+const Test =() => {
     return (
-       <div className="">
-         <Maintenance/>
-       </div>
+    <div className="">
+ <Maintenance/>
+    </div>
     )
 }
 

@@ -10,13 +10,13 @@ const Header = () => {
       
     </div>
     <div className="flex md:gap-16 sm:gap-7 gap-6 items-center flex-shrink-0 text-blue-white md:mr-6 sm:mr-6 mr-0 md:mt-0">
-      <div className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
-      <a href="/anime" className="font-bold text-base tracking-widest ">Anime</a>
-      </div>
+      <a href="/anime" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
+      <div className="font-bold text-base tracking-widest ">Anime</div>
+      </a>
       
-      <div className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
-      <a href="/donghua" className="font-bold text-base tracking-widest ">Donghua</a>
-      </div>
+      <a href="/donghua" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
+      <div  className="font-bold text-base tracking-widest ">Donghua</div>
+      </a>
     </div>
 
   </nav>

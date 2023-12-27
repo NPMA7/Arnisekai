@@ -1,28 +1,64 @@
-import CardList from "@/components/main/CardLists";
-import Navbar from "@/components/header/navbar/NavbarAnime";
+import { NavbarAnime } from "@/components/header/Navbar";
+import {
+  CardAnimeComplete,
+  CardAnimeOngoing,
+} from "@/components/main/card/CardHome";
+import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 
 const AnimeHome = async () => {
-  const response = await fetch(`
+  const ongoing = await fetch(`
   ${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime
   `);
-  const anime = await response.json();
+  const ongoing_anime = await ongoing.json();
   // console.log(anime.data)
+
+  const complete = await fetch(`
+  ${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete-anime
+  `);
+  const complete_anime = await complete.json();
+  // console.log(complete_anime.data)
+
   return (
-    <div className="pt-40 text-gray-300">
-        <div className="">
-          <Navbar />
-        </div>
-      <div className="">
-        <div className="px-7">
-          <h1 className="">Ongoing Anime</h1>
+    <div className="pt-44 text-gray-300 ">
+      <div>
+        <NavbarAnime />
+        <HighlightJadwalAnime />
+      </div>
+
+      <div className="font-bold ">
+        <div className="ml-10 pt-10 ">
+          <h1 className="text-xl">Ongoing Anime</h1>
         </div>
         <div
           id="grid-ongoing-anime-home"
-          className=" lg:mx-80  sm:mx-20 mx-5 bg-blue-500 grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-5 overflow-hidden"
+          className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-5 overflow-hidden"
         >
-          {anime.data.map((data) => {
+          {ongoing_anime.data.map((data) => {
             return (
-              <CardList title_anime={data.title} poster_anime={data.poster} />
+              <CardAnimeOngoing
+                title_ongoing={data.title}
+                poster_ongoing={data.poster}
+                episode_baru={data.current_episode}
+                episode_rilis={data.newest_release_date}
+              />
+            );
+          })}
+        </div>
+        <div className="ml-10 pt-20 ">
+          <h1 className="text-xl">Complete Anime</h1>
+        </div>
+        <div
+          id="grid-complete-anime-home"
+          className="mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-5 overflow-hidden"
+        >
+          {complete_anime.data.map((data) => {
+            return (
+              <CardAnimeComplete
+                title_complete={data.title}
+                poster_complete={data.poster}
+                episode_complete={data.episode_count}
+                rating={data.rating}
+              />
             );
           })}
         </div>
