@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 img {
     width: auto;
     height: auto;
@@ -23,7 +24,7 @@ img {
     -o-transition:;
 }
 
-#highlight {
+#anime-highlight {
     width: 30vw;
     height: 600px;
     right: 1vw;
@@ -32,8 +33,15 @@ img {
     padding: 50px;
     -webkit-filter: brightness(50%);
 }
-@media screen and (max-width:770px) {
-    #highlight, #img{
+
+#donghua-highlight {
+    width: 400px;
+    filter:opacity(20%);
+    -webkit-filter:opacity(20%);
+}
+
+@media screen and (max-width:767px) {
+    #anime-highlight,#donghua-highlight, #img{
         display: none;
     }
     
