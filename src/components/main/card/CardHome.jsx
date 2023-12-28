@@ -9,7 +9,7 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer lg:pl-0">
           <div
-            className=" h-12 pt-1.5 md:w-40 sm-36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
+            className=" md:h-14 h-13 pt-1.5 sm:w-40 w-32 pl-1.5 flex text-center lg:text-base text-sm  text-gray-100
           absolute overflow-hidden max-[340px]:w-24"
           >
             {title_ongoing}
@@ -24,13 +24,13 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="h-10 pt-56 text-gray-100 max-[768px]:pt-40
+            className="h-10 pt-56 text-gray-100 max-[768px]:pt-40  min-[456px]:pt-52
           absolute "
           >
             {episode_rilis}
           </div>
           <div
-            className="mt-1 w-28 pl-3 pt-60 text-gray-100 max-[768px]:pt-44
+            className="mt-1 w-28 pl-4 pt-60 text-gray-100 max-[768px]:pt-44  min-[456px]:pt-56
           absolute "
           >
             {episode_baru}
@@ -54,7 +54,7 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer ">
           <div
-            className=" h-12 pt-1.5 md:w-40 sm-36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
+            className=" md:h-14 h-13 pt-1.5 sm:w-40 w-32 pl-1. flex text-center lg:text-base text-sm  text-gray-100
             absolute overflow-hidden max-[340px]:w-24"
           >
             {title_complete}
@@ -69,13 +69,13 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="pr-6 pt-52 text-gray-100 max-[768px]:pt-40
+            className="pr-4 pt-52 text-gray-100 max-[768px]:pt-40  min-[456px]:pt-52
             absolute "
           >
             🌟{rating}
           </div>
           <div
-            className="mt-1 w-28 pl-3.5 pt-60 text-gray-100 max-[768px]:pt-44
+            className="mt-1 w-28 pl-3 pt-60 text-gray-100 max-[768px]:pt-44  min-[456px]:pt-56
           absolute "
           >
             {episode_complete} Episode
