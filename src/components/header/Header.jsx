@@ -6,7 +6,7 @@ const Header = () => {
     <div className="flex items-center flex-shrink-0 text-blue-600 md:mx-6 sm:mx-6 mx-0 max-[200px]:hidden  " >
       <a href="/" ><svg className="fill-current h-9 w-9 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
       </a>
-      <a href="/" className="max-[455px]:hidden font-bold sm:text-3xl text-sm max-[450px]:text-2xl  tracking-widest">Arnisekai</a>
+      <a href="/" className="max-[455px]:hidden font-bold sm:text-3xl text-sm min-[456px]:text-3xl  tracking-widest">Arnisekai</a>
       
     </div>
     <div className="flex max-[285px]:justify-center  max-[340px]:gap-2 md:gap-16 sm:gap-7 gap-4 items-center flex-shrink-0 text-blue-white sm:mr-6 md:mt-0">
