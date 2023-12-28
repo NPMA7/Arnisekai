@@ -69,13 +69,13 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="pr-4 text-gray-100 max-[768px]:pt-40  min-[456px]:pt-48 
+            className="pr-4 text-gray-100 max-[768px]:pt-40  max-[460px]:pt-56 min-[456px]:pt-44 
             absolute "
           >
             🌟{rating}
           </div>
           <div
-            className="mt-1 w-28 pl-3 text-gray-100 max-[768px]:pt-44  min-[456px]:pt-52
+            className="mt-1 w-28 pl-3 text-gray-100 max-[768px]:pt-44 min-[500px]:pt-56 min-[456px]:pt-48
           absolute "
           >
             {episode_complete} Episode
