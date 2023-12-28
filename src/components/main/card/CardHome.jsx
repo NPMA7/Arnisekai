@@ -24,7 +24,7 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="h-10 pt-56 text-gray-100 max-[768px]:pt-40  min-[456px]:pt-52
+            className="h-10  text-gray-100 max-[768px]:pt-40  min-[456px]:pt-52
           absolute "
           >
             {episode_rilis}
