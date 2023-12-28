@@ -54,8 +54,8 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer ">
           <div
-            className="h-12 pt-1.5 w-44 max-[769px]:w-40 max-[640px]:w-36 max-[400px]:w-32 max-[320px]:w-24 sm:36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
-            absolute overflow-hidden"
+            className=" h-12 pt-1.5 md:w-40 sm-36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
+            absolute overflow-hidden max-[340px]:w-24"
           >
             {title_complete}
           </div>
