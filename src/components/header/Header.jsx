@@ -9,12 +9,12 @@ const Header = () => {
       <a href="/" className="font-bold md:text-3xl text-2xl tracking-widest">Arnisekai</a>
       
     </div>
-    <div className="flex md:gap-16 sm:gap-7 gap-6 items-center flex-shrink-0 text-blue-white md:mr-6 sm:mr-6 mr-0 md:mt-0">
-      <a href="/anime" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
+    <div className="flex  max-[340px]:gap-2 md:gap-16 sm:gap-7 gap-6 items-center flex-shrink-0 text-blue-white sm:mr-6 mr-0 md:mt-0">
+      <a href="/anime" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 sm:w-28 max-[640px]:w-28 max-[340px]:w-24  h-12 md:h-16 items-center rounded-md justify-center">
       <div className="font-bold text-base tracking-widest ">Anime</div>
       </a>
       
-      <a href="/donghua" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 w-28 h-12 md:h-16 items-center rounded-md justify-center">
+      <a href="/donghua" className="flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 md:w-48 sm:w-28 max-[640px]:w-28 max-[340px]:w-24 h-12 md:h-16 items-center rounded-md justify-center">
       <div  className="font-bold text-base tracking-widest ">Donghua</div>
       </a>
     </div>

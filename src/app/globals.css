@@ -110,7 +110,7 @@ img {
     width: 95vw;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 350px) {
   #ongoing-home-image,
   #complete-home-image {
     width: 150px;
@@ -136,11 +136,7 @@ img {
   #details-anime-home {
     margin-top: -45px;
   }
-  @media screen and (max-width: 320px) {
-    #navbar {
-      margin-top: 30px;
-    }
-  }
+
 }
 /* end home page anime */
 
