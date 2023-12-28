@@ -128,7 +128,7 @@ img {
 
   #grid-ongoing-anime-home {
     height: 43em;
-    width: 95vw;
+    width: 95       <meta name="viewport" content="width=device-width, initial-scale=1.0">vw;
   }
   #grid-complete-anime-home {
     height: 29em;
