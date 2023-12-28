@@ -105,13 +105,13 @@ img {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    width: 98vw;
+    width: 97vw;
   }
   #grid-complete-anime-home {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    width: 98vw;
+    width: 97vw;
   }
 
 }
@@ -128,9 +128,11 @@ img {
 
   #grid-ongoing-anime-home {
     height: 43em;
+    width: 95vw;
   }
   #grid-complete-anime-home {
     height: 29em;
+    width: 95vw;
   }
 }
 
