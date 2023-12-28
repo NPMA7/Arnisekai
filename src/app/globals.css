@@ -119,15 +119,25 @@ img {
 
 @media screen and (max-width:769px){
   #grid-ongoing-anime-home {
+    height: 56em;
     width: 95vw;
-    height: 100%;
   }
   #grid-complete-anime-home {
-    height: 100vw;
+    height: 37em;
     width: 95vw;
   }
 }
 
+@media screen and (max-width:450px){
+  #grid-ongoing-anime-home {
+    width: 95vw;
+    height: 100%;
+  }
+  #grid-complete-anime-home {
+    height: 100%;
+    width: 95vw;
+  }
+}
 
 
 
