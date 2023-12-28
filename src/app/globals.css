@@ -110,7 +110,7 @@ img {
     width: 95vw;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #ongoing-home-image,
   #complete-home-image {
     width: 150px;
