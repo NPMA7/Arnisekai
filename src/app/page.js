@@ -33,12 +33,12 @@ const Home = async () => {
         <div className="my-20  md:w-3/5 w-full">
           <SearchBar />
         </div>
-        <div className="font-semibold md:w-3/5 w-full  text-gray-300">
-          <h1 className="md:text-4xl text-2xl md:mb-26 mb-20 ">
+        <div className="font-semibold md:w-3/5 w-full   text-gray-300">
+          <h1 className="md:text-4xl sm:text-2xl  max-[640px]:text-xl text-lg md:mb-26 mb-20 ">
             <span className="tracking-widest  text-white">ARNISEKAI </span>-
             Situs menonton anime dan donghua secara online & gratis
           </h1>
-          <div className="md:text-xl text-lg ">
+          <div className="md:text-xl sm:text-lg max-[640px]:text-sm ">
             <div className="">
               <h1 className="  text-white">
                 {" "}
