@@ -72,12 +72,24 @@ img {
 }
   
 #grid-ongoing-anime-home {
-  height: 56em;
+  /* height: 56em; */
+  height: 100%;
 }
 #grid-complete-anime-home {
-  height: 37em;
+  /* height: 37em; */
+  height: 100%;
 }
 
+@media screen and (min-width: 1280px) {
+  #grid-ongoing-anime-home {
+    height: 56em;
+    /* height: 100%; */
+  }
+  #grid-complete-anime-home {
+    height: 37em;
+    /* height: 100%; */
+  }
+}
 
 @media screen and (max-width: 1280px) {
   #grid-ongoing-anime-home {
@@ -91,6 +103,14 @@ img {
     padding: 1em;
     overflow: hidden;
     width: 74vw;
+  }
+  #grid-ongoing-anime-home {
+    height: 56em;
+    /* height: 100%; */
+  }
+  #grid-complete-anime-home {
+    height: 37em;
+    /* height: 100%; */
   }
   
 
@@ -113,32 +133,41 @@ img {
     overflow: hidden;
     width: 97vw;
   }
-
+  #grid-ongoing-anime-home {
+    height: 56em;
+    /* height: 100%; */
+  }
+  #grid-complete-anime-home {
+    height: 37em;
+    /* height: 100%; */
+  }
 }
 
 
 @media screen and (max-width:769px){
+
   #grid-ongoing-anime-home {
+    width: 95vw;
     height: 56em;
-    width: 95vw;
+
   }
   #grid-complete-anime-home {
+    height: 100%;
     height: 37em;
-    width: 95vw;
+    
   }
 }
+@media screen and (max-width:640px){
 
-@media screen and (max-width:500px){
   #grid-ongoing-anime-home {
     width: 95vw;
-    height: 100%;
+    height: 0%;
   }
   #grid-complete-anime-home {
     height: 100%;
     width: 95vw;
   }
 }
-
 
 
 
