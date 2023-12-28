@@ -24,13 +24,13 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="h-10 text-gray-100 max-[768px]:pt-40   min-[460px]:pt-44 min-[456px]:pt-52
+            className="h-10 text-gray-100 min-[500px]:pt-52 max-[499px]:pt-48 min-[460px]:pt-44 min-[456px]:pt-52
           absolute "
           >
             {episode_rilis}
           </div>
           <div
-            className="mt-1 w-28 pl-4  text-gray-100 max-[768px]:pt-44   min-[460px]:pt-48 min-[456px]:pt-56
+            className="mt-1 w-28 pl-4  text-gray-100 min-[500px]:pt-56 max-[499px]:pt-52   min-[460px]:pt-48 min-[456px]:pt-56
           absolute "
           >
             {episode_baru}
@@ -69,13 +69,13 @@ export const CardAnimeOngoing = ({
             />
           </div>
           <div
-            className="pr-4 text-gray-100 max-[768px]:pt-40  min-[460px]:pt-44 min-[456px]:pt-52 
+            className="pr-4 text-gray-100 min-[500px]:pt-52 max-[499px]:pt-48   min-[460px]:pt-44 min-[456px]:pt-52 
             absolute "
           >
             🌟{rating}
           </div>
           <div
-            className="mt-1 w-28 pl-3 text-gray-100 max-[768px]:pt-44 min-[460px]:pt-48 min-[456px]:pt-56
+            className="mt-1 w-28 pl-3 text-gray-100 min-[500px]:pt-56 max-[499px]:pt-52 min-[460px]:pt-48 min-[456px]:pt-56
           absolute "
           >
             {episode_complete} Episode
