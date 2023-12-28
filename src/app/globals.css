@@ -70,6 +70,14 @@ img {
   left: 74vw;
   width: 24vw;
 }
+  
+#grid-ongoing-anime-home {
+  height: 56em;
+}
+#grid-complete-anime-home {
+  height: 37em;
+}
+
 
 @media screen and (max-width: 1280px) {
   #grid-ongoing-anime-home {
@@ -85,12 +93,6 @@ img {
     width: 74vw;
   }
   
-  #grid-ongoing-anime-home {
-    height: 56em;
-  }
-  #grid-complete-anime-home {
-    height: 37em;
-  }
 
   #jadwal {
     left: 75vw;
