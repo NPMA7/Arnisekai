@@ -128,7 +128,7 @@ img {
   }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
   #grid-ongoing-anime-home {
     width: 95vw;
     height: 100%;
