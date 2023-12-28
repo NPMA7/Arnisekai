@@ -13,7 +13,7 @@ export const NavbarAnime = () => {
           <a className="text-center block border border-blue-500 rounded py-2 px-3 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">Genre Anime</a>
         </li>
         <li className="flex-1">
-          <a className="text-center block border border-blue-500 rounded py-2 sm:px-5 min-[490px]:px-5 max-[340px]:px-2 max-[480px]:pr-5 max-[480px]:pl-5 pl-4 pr-6 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">List Anime</a>
+          <a className="text-center block border border-blue-500 rounded py-2 sm:px-5 min-[490px]:px-5 max-[340px]:px-2 max-[440px]:pr-5 pl-4 pr-6 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">List Anime</a>
         </li>
         <li className="flex-1">
           <a className="text-center block border border-blue-500 rounded py-2 px-2 lg:hidden  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">Jadwal Tayang</a>
