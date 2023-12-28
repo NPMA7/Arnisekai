@@ -118,23 +118,19 @@ img {
 
 
 @media screen and (max-width:769px){
-  #ongoing-home-image,
-  #complete-home-image {
-    width: 150px;
-    height: 150px;
-    filter: opacity(40%);
-    -webkit-filter: opacity(40%);
-  }
-
   #grid-ongoing-anime-home {
-    height: 43em;
-    width: 95       <meta name="viewport" content="width=device-width, initial-scale=1.0">vw;
+    height: 56em;
+    width: 95vw;
   }
   #grid-complete-anime-home {
-    height: 29em;
+    height: 37em;
     width: 95vw;
   }
 }
+
+
+
+
 
 
 /* end home page anime */
