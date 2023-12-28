@@ -49,7 +49,6 @@ img {
   position: relative;
   padding: 1em;
   overflow: hidden;
-  height: 56em;
   width: 81em;
 }
 
@@ -57,7 +56,6 @@ img {
   position: relative;
   padding: 1em;
   overflow: hidden;
-  height: 38em;
   width: 81em;
 }
 
@@ -78,39 +76,46 @@ img {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    height: 56em;
-    width: 75vw;
+    width: 74vw;
   }
   #grid-complete-anime-home {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    height: 38em;
-    width: 75vw;
+    width: 74vw;
   }
+  
+  #grid-ongoing-anime-home {
+    height: 56em;
+  }
+  #grid-complete-anime-home {
+    height: 37em;
+  }
+
   #jadwal {
     left: 75vw;
     width: 22vw;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   #grid-ongoing-anime-home {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    height: 56em;
-    width: 95vw;
+    width: 98vw;
   }
   #grid-complete-anime-home {
     position: relative;
     padding: 1em;
     overflow: hidden;
-    height: 38em;
-    width: 95vw;
+    width: 98vw;
   }
+
 }
-@media screen and (min-width: 350px) {
+
+
+@media screen and (max-width:769px){
   #ongoing-home-image,
   #complete-home-image {
     width: 150px;
@@ -118,26 +123,16 @@ img {
     filter: opacity(40%);
     -webkit-filter: opacity(40%);
   }
+
   #grid-ongoing-anime-home {
-    position: relative;
-    padding: 1em;
-    overflow: hidden;
     height: 43em;
-    width: 95vw;
   }
   #grid-complete-anime-home {
-    position: relative;
-    padding: 1em;
-    overflow: hidden;
-    height: 29.4em;
-    width: 95vw;
+    height: 29em;
   }
-
-  #details-anime-home {
-    margin-top: -45px;
-  }
-
 }
+
+
 /* end home page anime */
 
 /* end anime page */

@@ -16,7 +16,7 @@ export const NavbarAnime = () => {
           <a className="text-center block border border-blue-500 rounded py-2 max-[340px]:px-2  px-5 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">List Anime</a>
         </li>
         <li className="flex-1">
-          <a className="text-center block border border-blue-500 rounded py-2  lg:hidden  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">Jadwal Tayang</a>
+          <a className="text-center block border border-blue-500 rounded py-2 px-2 lg:hidden  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="#">Jadwal Tayang</a>
         </li>
         
       </ul></div>

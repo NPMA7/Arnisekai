@@ -9,8 +9,8 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer lg:pl-0">
           <div
-            className=" h-12 pt-1.5 sm:w-40 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
-          absolute overflow-hidden"
+            className=" h-12 pt-1.5 md:w-40 sm-36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
+          absolute overflow-hidden max-[340px]:w-24"
           >
             {title_ongoing}
           </div>
@@ -23,14 +23,14 @@ export const CardAnimeOngoing = ({
               height={100}
             />
           </div>
-          <div id="details-anime-home"
-            className="h-10 pt-56 text-gray-100
+          <div
+            className="h-10 pt-56 text-gray-100 max-[768px]:pt-40
           absolute "
           >
             {episode_rilis}
           </div>
-          <div id="details-anime-home"
-            className="mt-1 w-28 pl-3 pt-60 text-gray-100
+          <div
+            className="mt-1 w-28 pl-3 pt-60 text-gray-100 max-[768px]:pt-44
           absolute "
           >
             {episode_baru}
@@ -54,7 +54,7 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer ">
           <div
-            className="h-12 pt-1.5 sm:w-40 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
+            className="h-12 pt-1.5 w-44 max-[769px]:w-40 max-[640px]:w-36 max-[400px]:w-32 max-[320px]:w-24 sm:36 w-28 pl-1.5  lg:text-base text-sm  text-gray-100
             absolute overflow-hidden"
           >
             {title_complete}
@@ -68,14 +68,14 @@ export const CardAnimeOngoing = ({
               height={100}
             />
           </div>
-          <div id="details-anime-home"
-            className="pr-6 pt-52 text-gray-100
+          <div
+            className="pr-6 pt-52 text-gray-100 max-[768px]:pt-40
             absolute "
           >
             🌟{rating}
           </div>
-          <div id="details-anime-home"
-            className="mt-1 w-28 pl-2 pt-60 text-gray-100
+          <div
+            className="mt-1 w-28 pl-3.5 pt-60 text-gray-100 max-[768px]:pt-44
           absolute "
           >
             {episode_complete} Episode
