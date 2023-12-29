@@ -29,11 +29,11 @@ const Home = async () => {
           ></img>
         </div>
       </div>
-      <div className=" md:pt-24 p-20 ">
-        <div className="my-20  md:w-3/5 w-full">
+      <div className=" md:pt-24 sm:p-20 p-5 md:w-3/5 w-full">
+        <div className="my-20  ">
           <SearchBar />
         </div>
-        <div className="font-semibold md:w-3/5 w-full   text-gray-300">
+        <div className="font-semibold w-full   text-gray-300">
           <h1 className="md:text-4xl sm:text-2xl  max-[640px]:text-xl text-lg md:mb-26 mb-20 ">
             <span className="tracking-widest  text-white">ARNISEKAI </span>-
             Situs menonton anime dan donghua secara online & gratis
