@@ -1,9 +1,10 @@
 import { NavbarAnime } from "@/components/header/Navbar";
-import {
+import { 
   CardAnimeComplete,
   CardAnimeOngoing,
 } from "@/components/main/card/CardHome";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
+import Header from "@/components/header/Header";
 
 const AnimeHome = async () => {
   const ongoing = await fetch(`
@@ -19,13 +20,15 @@ const AnimeHome = async () => {
   // console.log(complete_anime.data)
 
   return (
-    <div className="pt-44 text-gray-300 ">
+    <div className=" text-gray-300">
       <div>
-        <NavbarAnime />
+      
+            <NavbarAnime />
         <HighlightJadwalAnime />
-      </div>
+      </div><div className="absolute z-10"><Header/></div>
+      
 
-      <div className="font-bold ">
+      <div className="font-bold pt-44 ">
         <div className="ml-10 pt-10 ">
           <h1 className="text-xl">Ongoing Anime</h1>
         </div>
