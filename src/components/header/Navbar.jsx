@@ -5,7 +5,7 @@ export const NavbarAnime = () => {
 
     return (
       <div className="">
-        <div className="max-[455px]:top-32 bg-gray-700 py-3 min-[456px]:fixed absolute w-full  md:top-20 sm:top-16 top-16 max-[455px]:z-9 min-[456px]:z-10 sm:z-10">
+        <div className="max-[455px]:top-32 bg-gray-700 py-3 min-[456px]:fixed absolute w-full  md:top-20 sm:top-16 top-16 max-[455px]:z-9 min-[456px]:z-10 sm:z-10 ">
            
         <ul  className="  grid lg:grid-cols-5 grid-cols-6 max-[455px]:grid-cols-3 gap-2 mx-5 max-[480px]:mx-2 mr-6 " >
         <li className="flex-1">

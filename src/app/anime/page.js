@@ -25,15 +25,15 @@ const AnimeHome = async () => {
       <div>
         <NavbarAnime />
       </div>
-      <div>
+      <div className="">
         <HighlightJadwalAnime />
       </div>
       <div className=" -top-20 fixed w-full py-2 z-10">
         <LittleSearchBar />
       </div>
 
-      <div className="font-bold pt-44 ">
-        <div className="ml-10 pt-10 ">
+      <div className="font-bold lg:pt-20 pt-60 sm:pt-52 md:pt-56 ">
+        <div className="ml-10">
           <h1 className="text-xl">Ongoing Anime</h1>
         </div>
         <div

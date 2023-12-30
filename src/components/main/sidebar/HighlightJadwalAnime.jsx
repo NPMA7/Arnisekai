@@ -1,6 +1,6 @@
 const HighlightJadwalAnime = () => {
   return (
-    <div className="hidden lg:block">
+    <div className="hidden lg:block pt-40" >
       <div
         id="highlight-jadwal-anime"
         className="absolute font-semibold mt-24 dark:bg-gray-700 rounded-xl text-gray-400"
