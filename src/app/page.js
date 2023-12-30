@@ -1,4 +1,4 @@
-import SearchBar from "@/components/header/SearchBar";
+import {SearchBar} from "@/components/header/SearchBar";
 import Highlight from "@/components/main/sidebar/Highlight";
 
 const Home = async () => {

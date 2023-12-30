@@ -1,10 +1,11 @@
 import { NavbarAnime } from "@/components/header/Navbar";
-import { 
+import {
   CardAnimeComplete,
   CardAnimeOngoing,
 } from "@/components/main/card/CardHome";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 import Header from "@/components/header/Header";
+import { LittleSearchBar } from "@/components/header/SearchBar";
 
 const AnimeHome = async () => {
   const ongoing = await fetch(`
@@ -22,11 +23,14 @@ const AnimeHome = async () => {
   return (
     <div className=" text-gray-300">
       <div>
-      
-            <NavbarAnime />
+        <NavbarAnime />
+      </div>
+      <div>
         <HighlightJadwalAnime />
-      </div><div className="absolute z-10"><Header/></div>
-      
+      </div>
+      <div className=" -top-20 fixed w-full py-2 z-10">
+        <LittleSearchBar />
+      </div>
 
       <div className="font-bold pt-44 ">
         <div className="ml-10 pt-10 ">

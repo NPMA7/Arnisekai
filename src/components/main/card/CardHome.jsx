@@ -9,7 +9,7 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer lg:pl-0">
           <div
-            className=" md:h-14 h-12 pt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-white
+            className=" md:h-13 h-12 pt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-white
           absolute overflow-hidden max-[340px]:w-24"
           >
             {title_ongoing}
@@ -54,7 +54,7 @@ export const CardAnimeOngoing = ({
       <div className="">
         <div className="hover:text-gray-30 flex justify-center cursor-pointer ">
           <div
-            className=" md:h-14 h-13 pt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-gray-100
+            className=" md:h-13 h-12 pt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-gray-100
             absolute overflow-hidden max-[340px]:w-24"
           >
             {title_complete}
