@@ -38,7 +38,7 @@ const AnimeHome = async () => {
         </div>
         <div
           id="grid-ongoing-anime-home"
-          className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3  gap-5 overflow-hidden"
+          className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2  gap-5 overflow-hidden"
         >
           {ongoing_anime.data.map((data) => {
             return (
@@ -56,7 +56,7 @@ const AnimeHome = async () => {
         </div>
         <div
           id="grid-complete-anime-home"
-          className="mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3  gap-5 overflow-hidden"
+          className="mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
         >
           {complete_anime.data.map((data) => {
             return (
