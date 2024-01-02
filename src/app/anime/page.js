@@ -1,7 +1,7 @@
 import { NavbarAnime } from "@/components/header/Navbar";
 import {
-  CardAnimeComplete,
-  CardAnimeOngoing,
+  CardHomeAnimeComplete,
+  CardHomeAnimeOngoing,
 } from "@/components/main/card/CardHome";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 import Header from "@/components/header/Header";
@@ -19,6 +19,10 @@ const AnimeHome = async () => {
   `);
   const complete_anime = await complete.json();
   // console.log(complete_anime.data)
+
+  if (ongoing_anime.status === "fail") return <Maintenance />;
+  if (complete_anime.status === "fail") return <Maintenance />;
+  else 
 
   return (
     <div className=" text-gray-300">
@@ -42,7 +46,7 @@ const AnimeHome = async () => {
         >
           {ongoing_anime.data.map((data) => {
             return (
-              <CardAnimeOngoing
+              <CardHomeAnimeOngoing
                 title_ongoing={data.title}
                 poster_ongoing={data.poster}
                 episode_baru={data.current_episode}
@@ -60,7 +64,7 @@ const AnimeHome = async () => {
         >
           {complete_anime.data.map((data) => {
             return (
-              <CardAnimeComplete
+              <CardHomeAnimeComplete
                 title_complete={data.title}
                 poster_complete={data.poster}
                 episode_complete={data.episode_count}

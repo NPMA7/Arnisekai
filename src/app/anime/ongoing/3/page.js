@@ -1,10 +1,11 @@
 import Maintenance from "@/components/error/Maintenance";
 import { NavbarAnime } from "@/components/header/Navbar";
-import { CardAnimeOngoing } from "@/components/main/card/CardAnime";
+import { CardAnime} from "@/components/main/card/CardAnime";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 
 const OngoingAnime = async () => {
-  const api_ongoing = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime`;
+  const api_ongoing = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime/3`;
+
   const ongoing = await fetch(api_ongoing);
   const ongoing_anime = await ongoing.json();
   // console.log(ongoing_anime.pagination)
@@ -25,7 +26,7 @@ const OngoingAnime = async () => {
           </div>
           <div
             id=""
-            className="  lg:w-3/4 gap-y-16 mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2  gap-5 overflow-hidden"
+            className="pb-96  lg:w-3/4 gap-y-16 mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2  gap-4 overflow-hidden"
           >
             {ongoing_anime.data.map((data) => {
               return (
@@ -38,21 +39,31 @@ const OngoingAnime = async () => {
               );
             })}
           </div>
-          <div className="">
+          <div className="pt-40">
             <div className=" ml-10 pt-20 flex justify-center gap-10 cursor-pointer text-center">
-              <a href="ongoing">
-                <h1 className="text-xl hover:bg-blue-200 bg-blue-700  py-1 px-3 hover:text-black">
-                  {ongoing_anime.pagination.current_page}
-                </h1>
-              </a>
-              <a href="ongoing/2">
+              <a href="2">
                 <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
-                  {ongoing_anime.pagination.next_page}
+                  {ongoing_anime.pagination.previous_page}
                 </h1>
               </a>
               <a href="3">
-                <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
+                <h1 className="text-xl bg-blue-700 hover:bg-blue-200 py-1 px-3 hover:text-black">
+                  {ongoing_anime.pagination.current_page}
+                </h1>
+              </a>
+              <a href="3">
+                <h1 className="text-xl hover:bg-blue-200 py-1 px-3 hover:text-black">
                   {ongoing_anime.pagination.last_visible_page}
+                </h1>
+              </a>
+              <a href="../2">
+                <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
+                  {ongoing_anime.pagination.has_next_page}
+                </h1>
+              </a>
+              <a href="../2">
+                <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
+                  {ongoing_anime.pagination.has_previous_page}
                 </h1>
               </a>
             </div>

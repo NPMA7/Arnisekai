@@ -1,4 +1,4 @@
-export const CardAnimeOngoing = ({
+export const CardHomeAnimeOngoing = ({
     title_ongoing,
     poster_ongoing,
     episode_baru,
@@ -43,7 +43,7 @@ export const CardAnimeOngoing = ({
     );
   };
   
- export const CardAnimeComplete = ({
+ export const CardHomeAnimeComplete = ({
 
     title_complete,
     poster_complete,

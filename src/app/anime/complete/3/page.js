@@ -4,7 +4,7 @@ import { CardAnime } from "@/components/main/card/CardAnime";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 
 const CompleteAnime = async () => {
-  const api_complete = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete-anime/1`;
+  const api_complete = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete-anime/3`;
 
   const complete = await fetch(api_complete);
   const complete_anime = await complete.json();
@@ -33,25 +33,30 @@ const CompleteAnime = async () => {
                 <CardAnime
                 title_anime={data.title}
                 poster_anime={data.poster}
-                rating={data.rating}
-                episode_complete={data.episode_count}
+                episode_rilis={data.rating}
+                episode_baru={data.episode_count}
               />
               );
             })}
           </div>
           <div className="">
             <div className=" ml-10 pt-20 flex justify-center gap-10 cursor-pointer text-center">
-              <a href="../ongoing">
+            <a href="../complete">
+                <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
+                  1
+                </h1>
+              </a>
+              <a href="2">
                 <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
                   {complete_anime.pagination.previous_page}
                 </h1>
               </a>
-              <a href="2">
+              <a href="3">
                 <h1 className="text-xl bg-blue-700 hover:bg-blue-200 py-1 px-3 hover:text-black">
                   {complete_anime.pagination.current_page}
                 </h1>
               </a>
-              <a href="complete/2">
+              <a href="4">
                 <h1 className="text-xl hover:bg-blue-200  py-1 px-3 hover:text-black">
                   {complete_anime.pagination.next_page}
                 </h1>
