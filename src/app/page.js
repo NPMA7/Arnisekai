@@ -14,7 +14,8 @@ const Home = async () => {
         <div id="anime-highlight" className=" md:grid hidden  grid-cols-5 absolute mt-80">
           {anime.data.map((data) => {
             return (
-              <Highlight title_anime={data.title} poster_anime={data.poster} />
+              <Highlight title_anime={data.title} poster_anime={data.poster} 
+              key={anime}/>
             );
           })}
         </div>
