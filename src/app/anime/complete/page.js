@@ -1,6 +1,6 @@
 import { AnimeAPIcomplete } from "@/api/AnimeAPI";
 
-const AnimeOngoing = async () => {
+const AnimeComplete = async () => {
   return (
     <div className="">
       <AnimeAPIcomplete/>
@@ -8,4 +8,5 @@ const AnimeOngoing = async () => {
   );
 };
 
-export default AnimeOngoing;
+export default AnimeComplete;
+
