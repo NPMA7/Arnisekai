@@ -1,24 +1,19 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import {SearchBar} from "@/components/header/SearchBar";
 import Highlight from "@/components/main/sidebar/Highlight";
 
-const Home = async() => {
+const Home = async () => {
   const API_BASE= `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime`;
-    const API_FETCH = await fetch(API_BASE);
-    const API = await API_FETCH.json();
-
-
+  const API_FETCH = await fetch(API_BASE);
+  const API = await API_FETCH.json();
+  
   return (
     <div className="">
 
       <div id="highlight">
         <div id="anime-highlight" className=" md:grid hidden  grid-cols-5 absolute mt-80">
-          {API.data?.map((data) => {
+          {API.data.map((data) => {
             return (
-              <Highlight title_anime={data.title}
-               poster_anime={data.poster} />
+              <Highlight title_anime={data.title} poster_anime={data.poster} />
             );
           })}
         </div>

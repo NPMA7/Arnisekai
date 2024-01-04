@@ -5,10 +5,8 @@ export const CardAnimeOngoing = ({
   episode_rilis,
 
 }) => {
-  
   return (
     <div className="">
-      
       <div className="hover:text-gray-30 flex justify-center cursor-pointer lg:pl-0">
         <div
           className=" md:h-13 h-12 pt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-white
