@@ -4,21 +4,7 @@ import { LittleSearchBar } from "@/components/header/SearchBar";
 import { CardAnimeComplete, CardAnimeOngoing } from "@/components/main/card/CardAnime";
 
 const LayoutAnimeHome = ({api_complete, api_ongoing}) => {
-//   const ongoing = await fetch(`
-//   ${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime
-//   `);
-//   const ongoing_anime = await ongoing.json();
-//   // console.log(anime.data)
 
-//   const complete = await fetch(`
-//   ${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete-anime
-//   `);
-//   const complete_anime = await complete.json();
-//   // console.log(complete_anime.data)
-
-//   if (ongoing_anime.status === "fail") return <Maintenance />;
-//   if (complete_anime.status === "fail") return <Maintenance />;
-//   else 
 
   return (
     <div className=" text-gray-300">

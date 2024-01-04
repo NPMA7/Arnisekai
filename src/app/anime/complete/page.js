@@ -1,12 +1,9 @@
 import { AnimeAPIcomplete } from "@/api/AnimeAPI";
 
-const AnimeComplete = async () => {
+const CompleteAnime = async () => {
   return (
-    <div className="">
-      <AnimeAPIcomplete/>
-    </div>
-  );
+    <AnimeAPIcomplete/>
+    );
 };
 
-export default AnimeComplete;
-
+export default CompleteAnime;

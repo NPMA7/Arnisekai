@@ -1,12 +1,8 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { NavbarAnime } from "@/components/header/Navbar";
 import { CardAnimeOngoing } from "@/components/main/card/CardAnime";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 
 export const LayoutAnimeOngoing = ({api, page}) => {
-
 
   return (
     <div className="">
