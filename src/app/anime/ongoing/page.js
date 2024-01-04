@@ -33,7 +33,7 @@ const OngoingAnime = () => {
         <div className="">
           <HighlightJadwalAnime />
         </div>
-        <div className="font-bold lg:pt-20 pt-60 sm:pt-52 md:pt-56 ">
+        <div  className="font-bold lg:pt-20 pt-60 sm:pt-52 md:pt-56 ">
           <div className="ml-10 pb-5">
             <h1 className="text-xl">Ongoing Anime #{page}</h1>
           </div>

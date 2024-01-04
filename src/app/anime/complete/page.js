@@ -33,7 +33,7 @@ const CompleteAnime = () => {
         <div className="">
           <HighlightJadwalAnime />
         </div>
-        <div className="font-bold lg:pt-20 pt-60 sm:pt-52 md:pt-56 ">
+        <div  className="font-bold lg:pt-20 pt-60 sm:pt-52 md:pt-56 ">
           <div className="ml-10 pb-5">
             <h1 className="text-xl">Complete Anime</h1>
           </div>
@@ -48,6 +48,7 @@ const CompleteAnime = () => {
                 poster_anime={data.poster}
                 rating={data.rating}
                 episode_complete={data.episode_count}
+                key={api}
               />
               );
             })}
