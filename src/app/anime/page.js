@@ -1,10 +1,6 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { NavbarAnime } from "@/components/header/Navbar";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 import { LittleSearchBar } from "@/components/header/SearchBar";
-import Maintenance from "@/utilities/error/Maintenance";
 import { MainCardComplete, MainCardOngoing } from "@/components/main/card/MainCard";
 
 const AnimeHome = () => {

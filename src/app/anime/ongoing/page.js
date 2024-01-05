@@ -1,9 +1,7 @@
-"use client";
-import Loading from "@/utilities/loading/LoadingPage";
-import React, { useEffect, useState } from "react";
 import { NavbarAnime } from "@/components/header/Navbar";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
 import { MainCardOngoingPage } from "@/components/main/card/MainCard";
+import { LittleSearchBar } from "@/components/header/SearchBar";
 
 const OngoingAnime = () => {
   
@@ -11,6 +9,9 @@ const OngoingAnime = () => {
     <div className=" text-gray-300">
       <div>
         <NavbarAnime />
+      </div>
+      <div className=" -top-20 fixed w-full py-2 z-10">
+        <LittleSearchBar />
       </div>
       <div className="">
         <HighlightJadwalAnime />

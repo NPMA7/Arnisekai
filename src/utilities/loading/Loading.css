@@ -1,5 +1,5 @@
 .wrapper {
-  margin-left:40vw;
+  margin-left:50%;
   width: 200px;
   padding-top: 400px;
   padding-bottom: 400px;
@@ -16,7 +16,8 @@
   background-color: #fff;
   left: 15%;
   transform-origin: 50%;
-  animation: circle7124 .5s alternate infinite ease;
+  animation: circle7124 1s alternate infinite ease;
+  -webkit-animation: circle7124 .7s alternate infinite ease;
 }
 
 @keyframes circle7124 {
@@ -40,13 +41,13 @@
 
 .circle:nth-child(2) {
   left: 45%;
-  animation-delay: .2s;
+  animation-delay: .7s;
 }
 
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
-  animation-delay: .3s;
+  animation-delay: 1s;
 }
 
 .shadow {
@@ -60,7 +61,8 @@
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: shadow046 .5s alternate infinite ease;
+  animation: shadow046 1s alternate infinite ease;
+  -webkit-animation: shadow046 .7s alternate infinite ease;
 }
 
 @keyframes shadow046 {
@@ -81,11 +83,51 @@
 
 .shadow:nth-child(4) {
   left: 45%;
-  animation-delay: .2s
+  animation-delay: .5s
 }
 
 .shadow:nth-child(5) {
   left: auto;
   right: 15%;
-  animation-delay: .3s;
+  animation-delay: .7s;
+}
+
+@media screen and (max-width:455px) { 
+  .wrapper {
+  margin-left:10%;
+  width: 200px;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+  
+}
+
+@media screen and (min-width:456px) { 
+  .wrapper {
+  margin-left:30%;
+  width: 200px;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width:1280px) { 
+  .wrapper {
+  margin-left:40%;
+  width: 200px;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+  
+}
 }

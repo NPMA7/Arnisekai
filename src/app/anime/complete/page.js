@@ -1,10 +1,7 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { NavbarAnime } from "@/components/header/Navbar";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
-import Maintenance from "@/utilities/error/Maintenance";
 import { MainCardCompletePage } from "@/components/main/card/MainCard";
+import { LittleSearchBar } from "@/components/header/SearchBar";
 
 const CompleteAnime = () => {
 
@@ -13,6 +10,9 @@ const CompleteAnime = () => {
         <div>
           <NavbarAnime />
         </div>
+        <div className=" -top-20 fixed w-full py-2 z-10">
+        <LittleSearchBar/>
+      </div>
         <div className="">
           <HighlightJadwalAnime />
         </div>

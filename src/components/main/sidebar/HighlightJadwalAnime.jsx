@@ -6,7 +6,7 @@ const HighlightJadwalAnime = () => {
 
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-      setTimeout(() => setLoading(false), 1212)
+      setTimeout(() => setLoading(false), 1400)
   }, [])
   if (loading) {
       return <Loading/>
