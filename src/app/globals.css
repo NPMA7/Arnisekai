@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 img {
   width: auto;
   height: auto;
@@ -47,14 +46,14 @@ img {
 /* anime page */
 
 /* home page anime */
-#grid-ongoing-anime-home {
+#grid-ongoing-anime-home,#grid-complete-anime-home  {
   position: relative;
   padding: 1em;
   overflow: hidden;
   width: 81em;
 }
 
-#grid-complete-anime-home {
+#grid-ongoing-anime,#grid-complete-anime  {
   position: relative;
   padding: 1em;
   overflow: hidden;
@@ -73,14 +72,11 @@ img {
   width: 24vw;
 }
   
-#grid-ongoing-anime-home {
+#grid-ongoing-anime-home,#grid-complete-anime-home {
   /* height: 56em; */
   height: 100%;
 }
-#grid-complete-anime-home {
-  /* height: 37em; */
-  height: 100%;
-}
+
 
 @media screen and (min-width: 1280px) {
   #grid-ongoing-anime-home {
@@ -116,10 +112,6 @@ img {
   }
   
 
-  #jadwal {
-    left: 75vw;
-    width: 22vw;
-  }
 }
 
 @media screen and (max-width: 1023px) {

@@ -1,13 +1,10 @@
-import Maintenance from "@/components/error/Maintenance"
-import JadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime"
-import AnimeHome from "../anime/page"
+import Test from "."
 
-const Test =() => {
-    return (
+const Testing =() => {
+return (
     <div className="">
- <Maintenance/>
+            <Test/>
     </div>
-    )
+)
 }
-
-export default Test
+export default Testing

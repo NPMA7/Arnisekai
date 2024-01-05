@@ -1,4 +1,16 @@
+"use client";
+import Loading from "@/utilities/loading/LoadingPage";
+import React, { useEffect, useState } from "react";
+
 const HighlightJadwalAnime = () => {
+
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+      setTimeout(() => setLoading(false), 1212)
+  }, [])
+  if (loading) {
+      return <Loading/>
+  }
   return (
     <div className="hidden lg:block pt-40" >
       <div
@@ -6,10 +18,10 @@ const HighlightJadwalAnime = () => {
         className="absolute font-semibold mt-24 dark:bg-gray-700 rounded-xl text-gray-400"
       >
         <h1 className="py-10 text-xl text-center">Jadwal Tayang Anime</h1>
-        <div className="grid lg:grid-cols-1">
+        <div className="grid grid-cols-2">
           <div className="h-52 px-10">
             <h1 className="text-center text-lg">Senin</h1>
-            <h2>bAlA BAlA</h2>
+            <h2>bAlA </h2>
             <h2>bAlA BAlA</h2>
             <h2>bAlA BAlA</h2>
             <h2>bAlA BAlA</h2>

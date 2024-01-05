@@ -1,5 +1,11 @@
 
+"use client";
+import Loading from "@/utilities/loading/LoadingPage";
+import React, { useEffect, useState } from "react";
+
 export const PaginationAnime = ({ api, page, setPage }) => {
+
+
   const FirstPage = () => {
     setPage(1);
   };
@@ -16,8 +22,8 @@ export const PaginationAnime = ({ api, page, setPage }) => {
   };
 
   return (
-    <div className="text-gray-40">
-      <div className="flex gap-8 pt-20 w-full justify-center">
+    <div className="text-gray-40 w-full">
+      <div className="flex gap-8 pt-20  justify-center">
         <button onClick={FirstPage} className="hover:bg-blue-700 transition-all  py-1 px-3">First Page</button>
         <button onClick={PreviousPage} className="hover:bg-blue-700 transition-all  py-1 px-3">{api.pagination?.has_previous_page}Prev</button>
         <button className="transition-all bg-blue-600 py-1 px-3">{page}</button>

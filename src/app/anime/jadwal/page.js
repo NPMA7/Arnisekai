@@ -1,4 +1,4 @@
-import Maintenance from "@/components/error/Maintenance";
+import Maintenance from "@/utilities/error/Maintenance";
 
 
 const JadwalAnime = async () => {
