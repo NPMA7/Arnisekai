@@ -7,8 +7,7 @@ const Home = async () => {
   const API = await API_FETCH.json();
   
   return (
-    <div className="">
-
+    <div>
       <div id="highlight">
         <div id="anime-highlight" className=" md:grid hidden  grid-cols-5 absolute mt-80">
           {API.data.map((data) => {

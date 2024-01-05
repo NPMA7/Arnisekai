@@ -25,13 +25,13 @@ export const CardAnimeOngoing = ({
         </div>
         <div
           className="hover:text-blue-400 h-10 mt-52 text-gray-100 max-[600px]:mt-40  
-        absolute "
+        absolute text-sm"
         >
           {episode_rilis}
         </div>
         <div
           className="hover:text-blue-400 w-28 pl-4 mt-56 text-gray-100 max-[600px]:mt-44  
-        absolute "
+        absolute text-sm"
         >
           {episode_baru}
         </div>
@@ -52,7 +52,7 @@ export const CardAnimeComplete = ({
 }) => {
   return (
     <div className="">
-      <div className="hover:text-gray-30 flex justify-center cursor-pointer ">
+      <div className="hover:text-gray-30 flex justify-center cursor-pointer lg:pl-0 ">
         <div
           className=" md:h-13 h-11 mt-1.5 sm:w-40 w-32 flex text-center lg:text-base text-sm  text-gray-100
           absolute overflow-hidden max-[340px]:w-24"
@@ -69,14 +69,14 @@ export const CardAnimeComplete = ({
           />
         </div>
         <div
-          className="hover:text-blue-400 mr-4 mt-52 text-gray-100 max-[600px]:mt-40 
-          absolute "
+          className="hover:text-blue-400 h-10 mt-52 text-gray-100 max-[600px]:mt-40  
+          absolute text-sm "
         >
           🌟{rating}
         </div>
         <div
-          className="hover:text-blue-400 w-28 ml-3 mt-56 text-gray-100 max-[600px]:mt-44 
-        absolute "
+          className="hover:text-blue-400 w-28 pl-4 mt-56 text-gray-100 max-[600px]:mt-44  
+          absolute text-sm"
         >
           {episode_complete} Episode
         </div>

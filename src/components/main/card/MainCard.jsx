@@ -7,7 +7,7 @@ import { PaginationAnime } from "@/utilities/PaginationAnime";
 
 export const MainCardOngoing = () => {
   const [page, setPage] = useState(1);
-  const [api_ongoing, setAPIongoing] = useState([]);
+  const [api, setAPIongoing] = useState([]);
 
   const fetchDataOngoing = async () => {
     const API_BASE = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime/${page}`;
@@ -19,21 +19,21 @@ export const MainCardOngoing = () => {
     fetchDataOngoing();
   }, [page]);
 
-  if (api_ongoing.status === "fail") return <Maintenance />;
+  if (api.status === "fail") return <Maintenance />;
 
 
   return (
     
       <>
         <>
-        {api_ongoing.data?.map((data) => {
+        {api.data?.map((data) => {
           return (
             <CardAnimeOngoing
             title_anime={data.title}
             poster_anime={data.poster}
             episode_baru={data.current_episode}
             episode_rilis={data.newest_release_date}
-            key={api_ongoing}
+            key={api}
             />
             );
           })}
@@ -46,7 +46,7 @@ export const MainCardOngoing = () => {
 
 export const MainCardOngoingPage = () => {
   const [page, setPage] = useState(1);
-  const [api_ongoing_page, setAPIongoing] = useState([]);
+  const [api, setAPIongoing] = useState([]);
 
   const fetchDataOngoing = async () => {
     const API_BASE = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime/${page}`;
@@ -58,7 +58,7 @@ export const MainCardOngoingPage = () => {
     fetchDataOngoing();
   }, [page]);
 
-  if (api_ongoing_page.status === "fail") return <Maintenance />;
+  if (api.status === "fail") return <Maintenance />;
 
 
   return (
@@ -67,19 +67,19 @@ export const MainCardOngoingPage = () => {
     id="grid-ongoing-anime"
     className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
     >
-    {api_ongoing_page.data?.map((data) => {
+    {api.data?.map((data) => {
       return (
         <CardAnimeOngoing
         title_anime={data.title}
         poster_anime={data.poster}
         episode_baru={data.current_episode}
         episode_rilis={data.newest_release_date}
-        key={api_ongoing_page}
+        key={api}
         />
         );
       })}
   </div>
-  <PaginationAnime api={api_ongoing_page} page={page} setPage={setPage} />
+  <PaginationAnime api={api} page={page} setPage={setPage} />
   
       </div>
 
@@ -88,7 +88,7 @@ export const MainCardOngoingPage = () => {
 };
 
 export const MainCardComplete = () => {
-    const [api_complete, setAPIcomplete] = useState([]);
+    const [api, setAPIcomplete] = useState([]);
     
   const [page, setPage] = useState(1);
 
@@ -103,22 +103,22 @@ export const MainCardComplete = () => {
       fetchDataComplete();
     },[page]);
   
-    if (api_complete.status === "fail") return <Maintenance />;
+    if (api.status === "fail") return <Maintenance />;
 
     return (
       <div className="">
         <div
         id="grid-complete-anime-home"
-        className="mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
+        className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
       >
-        {api_complete.data?.map((data) => {
+        {api.data?.map((data) => {
           return (
             <CardAnimeComplete
               title_anime={data.title}
               poster_anime={data.poster}
               episode_complete={data.episode_count}
               rating={data.rating}
-              key={api_complete}
+              key={api}
             />
           );
         })}
@@ -130,7 +130,7 @@ export const MainCardComplete = () => {
   
 
 export const MainCardCompletePage = () => {
-    const [api_complete_page, setAPIcomplete] = useState([]);
+    const [api, setAPIcomplete] = useState([]);
     
   const [page, setPage] = useState(1);
 
@@ -145,27 +145,27 @@ export const MainCardCompletePage = () => {
       fetchDataComplete();
     },[page]);
   
-    if (api_complete_page.status === "fail") return <Maintenance />;
+    if (api.status === "fail") return <Maintenance />;
 
     return (
       <div className="">
         <div
         id="grid-complete-anime"
-        className="mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
+        className=" mx-2 grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 max-[451px]:grid-cols-2 gap-5 overflow-hidden"
       >
-        {api_complete_page.data?.map((data) => {
+        {api.data?.map((data) => {
           return (
             <CardAnimeComplete
               title_anime={data.title}
               poster_anime={data.poster}
               episode_complete={data.episode_count}
               rating={data.rating}
-              key={api_complete_page}
+              key={api}
             />
           );
         })}
       </div>
-      <PaginationAnime api={api_complete_page} page={page} setPage={setPage} />
+      <PaginationAnime api={api} page={page} setPage={setPage} />
       </div>
     );
   };
