@@ -60,6 +60,13 @@ img {
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
+#ongoing-home-image:hover,
+#complete-home-image:hover {
+  width: 150px;
+  height: 200px;
+  filter: opacity(25%);
+  -webkit-filter: opacity(25%);
+}
 #highlight-jadwal-anime {
   left: 74vw;
   width: 24vw;

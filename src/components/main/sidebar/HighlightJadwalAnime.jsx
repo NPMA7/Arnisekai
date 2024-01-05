@@ -3,16 +3,15 @@ import Loading from "@/utilities/loading/LoadingPage";
 import React, { useEffect, useState } from "react";
 
 const HighlightJadwalAnime = () => {
-
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-      setTimeout(() => setLoading(false), 1400)
-  }, [])
+    setTimeout(() => setLoading(false), 1400);
+  }, []);
   if (loading) {
-      return <Loading/>
+    return <Loading />;
   }
   return (
-    <div className="hidden lg:block pt-40" >
+    <div className="hidden lg:block pt-40">
       <div
         id="highlight-jadwal-anime"
         className="absolute font-semibold mt-24 dark:bg-gray-700 rounded-xl text-gray-400"
