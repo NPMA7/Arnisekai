@@ -50,7 +50,7 @@ export const CardAnimeComplete = ({
     <div className="">
       <div className="hover:text-gray-30 flex justify-center cursor-pointer">
         <div
-          className="absolute pt-2 h-14 w-40 text-center overflow-hidden"
+          className="absolute pt-2 h-14 w-32 hover:h-36 text-center overflow-hidden"
         >
           {title_anime}
         </div>
