@@ -1,6 +1,6 @@
 import { NavbarAnime } from "@/components/header/Navbar";
 import HighlightJadwalAnime from "@/components/main/sidebar/HighlightJadwalAnime";
-import { MainCardOngoingPage } from "@/components/main/card/MainCard";
+import { MainCardOngoing } from "@/components/main/card/MainCard";
 import { LittleSearchBar } from "@/components/header/SearchBar";
 
 const OngoingAnime = () => {
@@ -8,9 +8,6 @@ const OngoingAnime = () => {
     <div className=" text-gray-300">
       <div>
         <NavbarAnime />
-      </div>
-      <div className=" -top-20 fixed w-full py-2 z-10">
-        <LittleSearchBar />
       </div>
       <div className="">
         <HighlightJadwalAnime />
@@ -22,7 +19,7 @@ const OngoingAnime = () => {
         <div
           className="flex flex-wrap gap-8 lg:w-3/4 pl-10 pr-2 py-10 max-sm:overflow-hidden"
         >
-          <MainCardOngoingPage />
+          <MainCardOngoing />
         </div>
       </div>
     </div>

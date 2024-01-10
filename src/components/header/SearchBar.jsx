@@ -42,7 +42,7 @@ export const SearchBar = () => {
   export const LittleSearchBar = () => {
     return (
       
-      <div className="px-10 relative max-[455px]:top-36  bg-gray-700 pt-2 pb-1">
+      <div className="px-10 relative bg-gray-700 pt-2 pb-1">
      <form >
         <label
           htmlFor="default-search"

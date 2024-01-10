@@ -26,7 +26,7 @@ const AnimeHome = () => {
         </div>
         <div
           id="box-card-anime"
-          className="flex flex-wrap gap-8 lg:w-3/4 pl-10 pr-2 py-10"
+          className="flex flex-wrap gap-10 lg:w-3/4 pl-10 pr-2 py-10"
         >
           <MainCardOngoing />
         </div>
@@ -35,7 +35,7 @@ const AnimeHome = () => {
         </div>
         <div
           id="box-card-anime"
-          className="flex flex-wrap gap-8 lg:w-3/4 pl-10 pr-2 py-10 max-sm:overflow-hidden"
+          className="flex flex-wrap gap-10 lg:w-3/4 pl-10 pr-2 py-10 max-sm:overflow-hidden"
         >
           <MainCardComplete />
         </div>

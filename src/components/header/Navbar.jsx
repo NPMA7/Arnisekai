@@ -5,9 +5,9 @@ export const NavbarAnime = () => {
 
     return (
       <div className="">
-        <div className="max-[455px]:top-32 bg-gray-700 py-3 min-[456px]:fixed absolute w-full  md:top-20 sm:top-16 top-16 max-[455px]:z-9 min-[456px]:z-10 sm:z-10 ">
+        <div className="bg-gray-700 py-3 xs:fixed absolute w-full md:top-20 sm:top-16 top-16 xs:z-10 z-9 ">
            
-        <ul  className="  grid lg:grid-cols-5 grid-cols-6 max-[455px]:grid-cols-3 gap-2 mx-5 max-[480px]:mx-2 mr-6 " >
+        <ul  className="  grid lg:grid-cols-5 xs:grid-cols-6 max-xs:grid-cols-3 gap-2 mx-5 max-xs:mx-2 mr-6 " >
         <li className="flex-1">
           <a className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-1 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden" href="/anime">Home</a>
         </li>       
@@ -28,7 +28,7 @@ export const NavbarAnime = () => {
         </li>
        
       </ul>
-      <div className=" max-[455px]:hidden  ">
+      <div className="max-xs:t-36">
         <LittleSearchBar />
       </div>
       </div>
