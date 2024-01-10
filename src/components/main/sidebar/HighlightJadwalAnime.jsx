@@ -5,16 +5,16 @@ import React, { useEffect, useState } from "react";
 const HighlightJadwalAnime = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1400);
+    setTimeout(() => setLoading(false), 1500);
   }, []);
   if (loading) {
     return <Loading />;
   }
   return (
-    <div className="hidden lg:block pt-40">
+    <div className="hidden lg:block pt-40 ">
       <div
         id="highlight-jadwal-anime"
-        className="absolute font-semibold mt-24 dark:bg-gray-700 rounded-xl text-gray-400"
+        className="font-semibold absolute mt-24 right-3 w-1/4 dark:bg-gray-700 rounded-xl text-gray-400"
       >
         <h1 className="py-10 text-xl text-center">Jadwal Tayang Anime</h1>
         <div className="grid grid-cols-2">

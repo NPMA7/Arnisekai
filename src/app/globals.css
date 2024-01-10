@@ -13,18 +13,6 @@ img {
   -o-transition: 0.3 ease all;
 }
 
-/* home page */
-#img {
-  width: 50%;
-  height: auto;
-  min-height: 50px;
-  max-height: 100px;
-  transition: 0.3 ease all;
-  -webkit-transition: 0.3 ease all;
-  -moz-transition: 0.3 ease all;
-  -ms-transition: 0.3 ease all;
-  -o-transition: 0.3 ease all;
-}
 #anime-highlight {
   width: 30vw;
   height: 600px;
@@ -41,51 +29,63 @@ img {
   -webkit-filter: opacity(20%);
 }
 
-/* end home page */
 
-/* anime page */
 
-/* home page anime */
-#grid-ongoing-anime-home,#grid-complete-anime-home, #grid-ongoing-anime,#grid-complete-anime  {
-  position: relative;
-  padding: 1em;
-  overflow: hidden;
-  width: 81em;
-}
 
-#ongoing-home-image,
-#complete-home-image {
+#image-card-anime {
   width: 150px;
   height: 200px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
-#ongoing-home-image:hover,
-#complete-home-image:hover {
+
+#image-card-anime:hover {
   width: 150px;
   height: 200px;
   filter: opacity(25%);
   -webkit-filter: opacity(25%);
 }
-#highlight-jadwal-anime {
-  left: 74vw;
-  width: 24vw;
+
+#box-card-anime  {
+  position: relative;
+  overflow: hidden;
+  height: 40em;
 }
-  
-#grid-ongoing-anime-home,#grid-complete-anime-home {
-  /* height: 56em; */
-  height: 100%;
+@media not all and (min-width:640px) {
+  #box-card-anime  {
+    position: relative;
+    overflow: hidden;
+    height: 98em;
+  }
 }
+
+/* #img {
+  width: 50%;
+  height: auto;
+  min-height: 50px;
+  max-height: 100px;
+  transition: 0.3 ease all;
+  -webkit-transition: 0.3 ease all;
+  -moz-transition: 0.3 ease all;
+  -ms-transition: 0.3 ease all;
+  -o-transition: 0.3 ease all;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1280px) {
   #grid-ongoing-anime-home {
     height: 56em;
-    /* height: 100%; */
   }
   #grid-complete-anime-home {
     height: 37em;
-    /* height: 100%; */
   }
 
 }
@@ -101,11 +101,9 @@ img {
 
   #grid-ongoing-anime-home {
     height: 56em;
-    /* height: 100%; */
   }
   #grid-complete-anime-home {
     height: 37em;
-    /* height: 100%; */
   }
   
 
@@ -122,11 +120,9 @@ img {
 
   #grid-ongoing-anime-home {
     height: 56em;
-    /* height: 100%; */
   }
   #grid-complete-anime-home {
     height: 37em;
-    /* height: 100%; */
   }
 }
 
@@ -154,14 +150,8 @@ img {
     height: 100%;
     width: 95vw;
   }
-}
+} */
 
 
 
 
-
-
-
-/* end home page anime */
-
-/* end anime page */
