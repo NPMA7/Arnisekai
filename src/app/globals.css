@@ -8,7 +8,10 @@ body {
   margin: 0;
 
 }
-
+ /* img {
+  width: 100px;
+  height: 100px;
+ } */
 #img {
   width: 50%;
   min-height: 50px;
@@ -40,6 +43,8 @@ body {
 
 
 #image-card-anime {
+  width: 100px;
+  height: 130px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
@@ -52,11 +57,11 @@ body {
 #box-card-anime  {
   position: relative;
   overflow: hidden;
-  height:51vh;
+  height:43vh;
 }
 @media not all and (min-width:455px) {
   #box-card-anime  {
-    height: 100vh;
+    height: 105vh;
   }
 }
 
