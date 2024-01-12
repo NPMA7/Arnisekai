@@ -70,9 +70,7 @@ img {
 }
 @media not all and (min-width:640px) {
   #box-card-anime  {
-    position: relative;
-    overflow: hidden;
-    height: 90%;
+    height: 100em;
   }
 }
 
