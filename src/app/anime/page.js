@@ -35,7 +35,7 @@ const AnimeHome = () => {
         </div>
         <div
           id="box-card-anime"
-          className="gap-10 lg:w-3/4 pl-10 pr-2 py-10 "
+          className="gap-10 lg:w-3/4 "
         >
           <MainCardComplete />
         </div>

@@ -44,13 +44,13 @@ export const CardAnimeComplete = ({
     <div className="">
       <div className="pl-4">
       <div
-          className="mt-52 max-xs:mt-40 text-gray-100 
+          className="mt-32 text-gray-100 
         absolute max-xs:text-sm"
         >
           ⭐{rating}
         </div>
         <div
-          className="mt-56 max-xs:mt-44 text-gray-100
+          className="mt-36 text-gray-100
         absolute max-xs:text-sm"
         >
           {episode_complete} Episode

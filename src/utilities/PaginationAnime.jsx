@@ -3,6 +3,14 @@ import Loading from "@/utilities/loading/LoadingPage";
 import React, { useEffect, useState } from "react";
 
 export const PaginationAnime = ({ api, page, setPage }) => {
+  
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1500);
+  }, []);
+  if (loading) {
+    return ;
+  }
   const FirstPage = () => {
     setPage(1);
   };
