@@ -68,9 +68,8 @@ img {
   overflow: hidden;
   height: 39em;
 }
-@media not all and (min-width:640px) {
+@media not all and (min-width:455px) {
   #box-card-anime  {
-    height: 100em;
   }
 }
 
