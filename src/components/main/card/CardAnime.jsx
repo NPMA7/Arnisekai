@@ -8,13 +8,13 @@ export const CardAnimeOngoing = ({
     <div className="">
       <div className="ml-4">
         <div
-          className="mt-40 text-gray-100  
+          className="mt-36 text-gray-100  
         absolute max-xs:text-sm"
         >
           {episode_rilis}
         </div>
         <div
-          className="mt-44  text-gray-100
+          className="mt-40 text-gray-100
         absolute max-xs:text-sm"
         >
           {episode_baru}
@@ -25,7 +25,7 @@ export const CardAnimeOngoing = ({
           {title_anime}
         </div>
         <div className="border-4 text-center rounded-md border-blue-400 ">
-          <img id="image-card-anime" src={poster_anime} />
+          <img id="image-card-anime" src={poster_anime} width={100} />
         </div>
       </div>
       

@@ -8,19 +8,9 @@ body {
   margin: 0;
 
 }
-img {
-  width: auto;
-  height: auto;
-  transition: 0.3 ease all;
-  -webkit-transition: 0.3 ease all;
-  -moz-transition: 0.3 ease all;
-  -ms-transition: 0.3 ease all;
-  -o-transition: 0.3 ease all;
-}
 
 #img {
   width: 50%;
-  height: auto;
   min-height: 50px;
   max-height: 100px;
   transition: 0.3 ease all;
@@ -50,8 +40,6 @@ img {
 
 
 #image-card-anime {
-  width: 150px;
-  height: 150px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
@@ -64,10 +52,11 @@ img {
 #box-card-anime  {
   position: relative;
   overflow: hidden;
-  height: 45em;
+  height:29em;
 }
 @media not all and (min-width:455px) {
   #box-card-anime  {
+    height: 100vh;
   }
 }
 

@@ -26,7 +26,7 @@ export const MainCardOngoing = () => {
   return (
     <>
        <div
-        className="grid lg:grid-cols-6 pr-10 md:grid-cols-5 sm:grid-cols-4 max-sm:grid-cols-3 max-xs:grid-cols-2 max-s:grid-cols-1 gap-5"
+        className="flex flex-shrink flex-wrap justify-center gap-5"
       >
         {api.data?.map((data) => {
           return (
