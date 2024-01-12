@@ -51,14 +51,12 @@ img {
 
 #image-card-anime {
   width: 150px;
-  height: 200px;
+  height: 150px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
 
 #image-card-anime:hover {
-  width: 150px;
-  height: 200px;
   filter: opacity(25%);
   -webkit-filter: opacity(25%);
 }
@@ -66,7 +64,7 @@ img {
 #box-card-anime  {
   position: relative;
   overflow: hidden;
-  height: 39em;
+  height: 45em;
 }
 @media not all and (min-width:455px) {
   #box-card-anime  {
