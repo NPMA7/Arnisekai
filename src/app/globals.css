@@ -43,8 +43,8 @@ body {
 
 
 #image-card-anime {
-  width: 100px;
-  height: 150px;
+  width: 120px;
+  height: 160px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
@@ -57,11 +57,11 @@ body {
 #box-card-anime  {
   position: relative;
   overflow: hidden;
-  height: 49vh;
+  height: 52vh;
 }
 @media not all and (min-width:455px) {
   #box-card-anime  {
-    height: 105vh;
+    height: 95vh;
   }
 }
 
