@@ -26,11 +26,11 @@ const AnimeHome = () => {
         </div>
         <div
           id="box-card-anime"
-          className="gap-10 lg:w-3/4 pl-10 pr-2 py-10"
+          className="gap-10 lg:w-3/4 mt-5"
         >
           <MainCardOngoing />
         </div>
-        <div className="ml-10 mt-10 bg-red-600">
+        <div className="ml-10 mt-10 ">
           <h1 className="lg:text-2xl text-xl">Complete Anime</h1>
         </div>
         <div

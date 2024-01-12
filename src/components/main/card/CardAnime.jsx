@@ -20,12 +20,13 @@ export const CardAnimeOngoing = ({
           {episode_baru}
         </div>
       </div>
+
       <div className="hover:text-gray-30 flex justify-center cursor-pointer">
         <div className="absolute pt-2 h-14 w-32 hover:h-36 text-center overflow-hidden">
           {title_anime}
         </div>
         <div className="border-4 text-center rounded-md border-blue-400 ">
-          <img id="image-card-anime" src={poster_anime} width={100} />
+          <img id="image-card-anime" src={poster_anime} width={120} />
         </div>
       </div>
       
