@@ -57,7 +57,7 @@ body {
 #box-card-anime  {
   position: relative;
   overflow: hidden;
-  height: 52vh;
+  height: 30em;
 }
 @media not all and (min-width:455px) {
   #box-card-anime  {
