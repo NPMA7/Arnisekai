@@ -1,16 +1,9 @@
 "use client";
-import Loading from "@/utilities/loading/LoadingPage";
 import React, { useEffect, useState } from "react";
 
 export const PaginationAnime = ({ api, page, setPage }) => {
   
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
-  }, []);
-  if (loading) {
-    return ;
-  }
+
   const FirstPage = () => {
     setPage(1);
   };
@@ -27,7 +20,7 @@ export const PaginationAnime = ({ api, page, setPage }) => {
   };
 
   return (
-    <div className="text-gray-40 w-full">
+    <section className="text-gray-40 w-full ">
       <div className="flex gap-8 pt-20  justify-center">
         {page <= 1 ? null : (
           <button
@@ -63,6 +56,6 @@ export const PaginationAnime = ({ api, page, setPage }) => {
           </button>
         )}
       </div>
-    </div>
+    </section>
   );
 };

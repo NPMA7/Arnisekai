@@ -6,7 +6,7 @@ const Maintenance = () => {
         <svg
           className="mx-auto mb-4 w-10 h-10 text-gray-400"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="-1250  -180 2948 900 "
+          viewBox="-1250 -480 2948 1300 "
         >
           <path
             fill="currentColor"

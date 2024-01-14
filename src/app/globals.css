@@ -6,12 +6,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-
+  background-color: rgb(40, 39, 39);
 }
- /* img {
-  width: 100px;
-  height: 100px;
- } */
+
 #img {
   width: 50%;
   min-height: 50px;
@@ -39,12 +36,9 @@ body {
   -webkit-filter: opacity(20%);
 }
 
-
-
-
 #image-card-anime {
-  width: 125px;
-  height: 160px;
+  width: 120px;
+  height: 150px;
   filter: opacity(45%);
   -webkit-filter: opacity(45%);
 }
@@ -54,16 +48,7 @@ body {
   -webkit-filter: opacity(25%);
 }
 
-#box-card-anime  {
-  position: relative;
-  overflow: hidden;
-  height: 30em;
-}
-@media not all and (min-width:455px) {
-  #box-card-anime  {
-    height: 98vh;
-  }
-}
+
 
 
 

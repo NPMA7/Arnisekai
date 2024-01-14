@@ -7,8 +7,8 @@ const Home = async () => {
   const API = await API_FETCH.json();
   
   return (
-    <div>
-      <div id="highlight">
+    <>
+      <div id="highlight" className="text-gray-300">
         <div id="anime-highlight" className=" md:grid hidden  grid-cols-5 absolute mt-80">
           {API.data.map((data) => {
             return (
@@ -148,7 +148,7 @@ const Home = async () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Home;
