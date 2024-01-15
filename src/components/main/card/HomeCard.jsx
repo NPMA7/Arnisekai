@@ -16,10 +16,10 @@ export const Ongoing = ({api_ongoing, symbol, more}) => {
                 <div className="border-4 text-center rounded-md border-blue-400 ">
                   <img id="image-card-anime" src={data.poster} />
                 </div>
-                <h3 className="sm:mt-36 mt-28 text-gray-100 absolute max-xs:text-sm">
+                <h3 className="mt-28 text-gray-100 absolute max-xs:text-sm">
                   {data.newest_release_date}
                   </h3>
-                <h4 className="sm:mt-40 mt-32 text-gray-100 absolute max-xs:text-sm">
+                <h4 className="mt-32 text-gray-100 absolute max-xs:text-sm">
                   {data.current_episode}
                 </h4>
               </section>
@@ -48,11 +48,11 @@ export const Complete = ({api_complete, symbol, more}) => {
                   <img id="image-card-anime" src={data.poster} />
                 </div>
   
-                <h3 className="sm:mt-36 mt-28 text-gray-100 absolute max-xs:text-sm">
+                <h3 className="mt-28 text-gray-100 absolute max-xs:text-sm">
                   {symbol}
                   {data.rating}
                 </h3>
-                <h4 className="sm:mt-40 mt-32  text-gray-100 absolute max-xs:text-sm">
+                <h4 className="mt-32  text-gray-100 absolute max-xs:text-sm">
                   {data.episode_count} {more}
                 </h4>
               </section>
