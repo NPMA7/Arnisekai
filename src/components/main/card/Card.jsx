@@ -18,13 +18,12 @@ export const CardAnime = ({ api, symbol, more }) => {
                 <img id="image-card-anime" src={data.poster} />
               </div>
 
-              <h3 className="mt-36 text-gray-100 absolute max-xs:text-sm">
+              <h3 className="sm:mt-36 mt-28  text-gray-100 absolute max-xs:text-sm">
                 {symbol}
                 {data.newest_release_date}
                 {data.rating}
               </h3>
-              <h4 className="mt-40 text-gray-100 absolute max-xs:text-sm">
-                {" "}
+              <h4 className="sm:mt-40 mt-32 text-gray-100 absolute max-xs:text-sm">
                 {data.status}
                 {data.current_episode}
                 {data.episode_count} {more}
