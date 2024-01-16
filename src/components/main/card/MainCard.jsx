@@ -22,7 +22,7 @@ export const MainCardHome = () => {
 
   return (
     <>
-      <section className="gap-10 lg:w-3/4 mt-40  font-bold lg:pt-24 pt-64">
+      <section className="gap-10 lg:w-3/4 mt-5 font-bold lg:pt-24 pt-64">
         <h1 className="text-gray-300  lg:ml-16 ml-10 pb-5 lg:text-2xl text-xl">
           Ongoing Anime
         </h1>
@@ -65,7 +65,7 @@ export const MainCardOngoing = () => {
     return (
       <>
         <section className="gap-10 lg:w-3/4 mt-32 font-bold lg:pt-24 pt-64">
-          <h1 className="lg:ml-16 ml-10 pb-5 lg:text-2xl text-xl">
+          <h1 className="lg:ml-16 ml-5 pb-5 lg:text-2xl text-xl">
             Ongoing Anime #{page}
           </h1>
           <div className="md:h-screen">
@@ -105,7 +105,7 @@ export const MainCardComplete = () => {
     return (
       <>
         <section className="gap-10 lg:w-3/4 mt-32 font-bold lg:pt-24 pt-64">
-          <h1 className="lg:ml-16 ml-10 pb-5 lg:text-2xl text-xl">
+          <h1 className="lg:ml-16 ml-5 pb-5 lg:text-2xl text-xl">
             Complete Anime #{page}
           </h1>
           <div className="md:h-screen">
