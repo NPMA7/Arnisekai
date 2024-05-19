@@ -1,103 +1,170 @@
-import Link from "next/link";
-import { LittleSearchBar } from "./SearchBar";
+//BERESSSSSS
 
-export const NavbarAnime = () => {
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
+import Link from "next/link";
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearch] = useState(false);
+  const searchRef = useRef();
+  const router = useRouter();
+
   return (
     <>
-      <nav className="bg-gray-700 py-3 md:fixed absolute w-full md:top-20 sm:top-16 top-16 md:z-10 z-9 ">
-        <ul className="  grid lg:grid-cols-5 md:grid-cols-6 xs:grid-cols-3 grid-cols-3 gap-2 mx-5 max-xs:mx-2 mr-6 ">
-          <li className="flex-1">
-            <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-1 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime"}
+      <header className="text-gray-300 px-5 flex items-center justify-between flex-wrap bg-gray-700 p-2 fixed top-0 w-full z-10">
+        <section className="flex items-center flex-shrink-0 text-blue-600 space-x-3">
+          <Link href={"/"}>
+            <svg
+              className="fill-current h-8 w-8 mr-1"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Home
+              <path d="M12 20.1c1.6-6.5 5.7-9.7 12.1-9.7 9.7 0 10.9 7.3 15.8 8.5 3.2.8 6.1-.4 8.5-3.6-1.6 6.5-5.7 9.7-12.1 9.7-9.7 0-10.9-7.3-15.8-8.5-3.2-.8-6.1.4-8.5 3.6zM0 34.5c1.6-6.5 5.7-9.7 12.1-9.7 9.7 0 10.9 7.3 15.8 8.5 3.2.8 6.1-.4 8.5-3.6-1.6 6.5-5.7 9.7-12.1 9.7-9.7 0-10.9-7.3-15.8-8.5-3.2-.8-6.1.4-8.5 3.6z" />
+            </svg>
+          </Link>
+          <Link
+            href={"/"}
+            className="hidden sm:flex font-bold text-xl md:text-2xl lg:text-3xl tracking-widest"
+          >
+            Arnisekai
+          </Link>
+        </section>
+        <section className="flex gap-3 items-center text-white">
+          <Link
+            href={"/anime"}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 ${router.pathname === "/anime" ? "bg-red-500" : "bg-blue-600 hover:bg-blue-50"} w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center`}
+            aria-current="page">
+              Anime
+          </Link>
+          <Link
+            href={"/donghua"}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-50 w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center ${router.pathname === "/donghua" ? "bg-red-500" : ""}`}
+          >
+              Donghua
+          </Link>
+        </section>
+
+        <button
+          onClick={() => setSearch(!searchOpen)}
+          className="sm:hidden text-gray-300 hover:text-white"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21 21l-5.2-5.2"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M15 11a4 4 0 10-8 0 4 4 0 008 0z"
+            />
+          </svg>
+        </button>
+        <input
+          type="text"
+          placeholder="🔍 Cari Anime/Donghua"
+          className={`p-2 rounded bg-gray-800 max-sm:mt-3 text-gray-300 sm:inline-block md:inline-block lg:inline-block xl:inline-block ${
+            searchOpen ? "flex" : "hidden"
+          }`}
+          ref={searchRef}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              const keyword = searchRef.current.value;
+              router.push(`/anime/search/${keyword}`);
+            }
+          }}
+        />
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="sm:hidden text-gray-300 hover:text-white"
+        >
+          <svg
+            className="h-8 w-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </header>
+      <nav className=" p-2 pt-16 md:pt-20">
+        <ul
+          className={`sm:flex flex-wrap justify-center sm:justify-evenly space-x-0 sm:space-x-2 md:space-x-3 text-xs md:text-sm ${
+            menuOpen ? "flex" : "hidden"
+          }`}
+        >
+          <li className="mb-2 w-full sm:w-auto">
+            <Link href="/anime" className="text-gray-300 hover:text-white">
+              <div className="bg-gray-800 hover:bg-green-800 w-full xl:w-60 lg:w-44 md:w-32 sm:w-28 h-10 flex items-center justify-center rounded-md">
+                Home
+              </div>
             </Link>
           </li>
-          <li className="flex-1">
+          <li className="mb-2 w-full sm:w-auto">
             <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-1  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime/ongoing"}
+              href={`/anime/ongoing`}
+              className="text-gray-300 hover:text-white"
             >
-              Ongoing Anime
+              <div className="bg-gray-800 hover:bg-green-800 w-full xl:w-60 lg:w-44 md:w-32 sm:w-28 h-10 flex items-center justify-center rounded-md">
+                Ongoing Anime
+              </div>
             </Link>
           </li>
-          <li className="flex-1">
+          <li className="mb-2 w-full sm:w-auto">
             <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime/complete"}
+              href={`/anime/complete`}
+              className="text-gray-300 hover:text-white"
             >
-              Complete Anime
+              <div className="bg-gray-800 hover:bg-green-800 w-full xl:w-60 lg:w-44 md:w-32 sm:w-28 h-10 flex items-center justify-center rounded-md">
+                Complete Anime
+              </div>
             </Link>
           </li>
-          <li className="flex-1">
+          <li className="mb-2 w-full sm:w-auto">
             <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-3 bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime/genre"}
+              href={`/anime/genres`}
+              className="text-gray-300 hover:text-white"
             >
-              Genre Anime
+              <div className="bg-gray-800 hover:bg-green-800 w-full xl:w-60 lg:w-44 md:w-32 sm:w-28 h-10 flex items-center justify-center rounded-md">
+                Genre Anime
+              </div>
             </Link>
           </li>
-          <li className="flex-1">
-            <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-5  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime/list"}
-            >
-              List Anime
-            </Link>
-          </li>
-          <li className="flex-1">
-            <Link
-              className="text-center block border border-blue-500 rounded h-9 pt-1.5 px-2 lg:hidden  bg-blue-500 hover:bg-blue-700 text-white overflow-hidden"
-              href={"/anime/jadwal"}
-            >
-              Jadwal Tayang
+          <li className="mb-2 w-full sm:w-auto">
+            <Link href={`/anime/list`} className="text-gray-300 hover:text-white">
+              <div className="bg-gray-800 hover:bg-green-800 w-full xl:w-60 lg:w-44 md:w-32 sm:w-28 h-10 flex items-center justify-center rounded-md">
+                List Anime
+              </div>
             </Link>
           </li>
         </ul>
-        <section className="max-xs:t-36">
-          <LittleSearchBar/>
-        </section>
       </nav>
     </>
   );
 };
 
-export const NavbarDonghua = () => {
-  return (
-    <ul className=" grid md:grid-cols-4 grid-cols-2 mt-2 gap-2  mx-5 mr-6">
-      <li className="flex-1">
-        <Link
-          className="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
-          href={"#"}
-        >
-          Ongoing Donghua
-        </Link>
-      </li>
-      <li className="flex-1">
-        <Link
-          className="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
-          href={"#"}
-        >
-          Complete Donghua
-        </Link>
-      </li>
-      <li className="flex-1">
-        <Link
-          className="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
-          href={"#"}
-        >
-          Genre Donghua
-        </Link>
-      </li>
-      <li className="flex-1">
-        <Link
-          className="text-center block border border-blue-500 rounded py-2  bg-blue-500 hover:bg-blue-700 text-white"
-          href={"#"}
-        >
-          List Donghua
-        </Link>
-      </li>
-    </ul>
-  );
-};
+export default Navbar;

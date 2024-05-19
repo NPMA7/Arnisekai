@@ -4,51 +4,26 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: rgb(40, 39, 39);
+  @apply p-0 m-0 bg-gray-900;
 }
 
 #img {
-  width: 50%;
-  min-height: 50px;
-  max-height: 100px;
-  transition: 0.3 ease all;
-  -webkit-transition: 0.3 ease all;
-  -moz-transition: 0.3 ease all;
-  -ms-transition: 0.3 ease all;
-  -o-transition: 0.3 ease all;
+  @apply w-1/2 min-h-[50px] max-h-[100px] transition-all duration-300 ease-in-out;
 }
 
 #anime-highlight {
-  width: 30vw;
-  height: 600px;
-  right: 1vw;
-  filter: brightness(50%);
-  overflow: hidden;
-  padding: 50px;
-  -webkit-filter: brightness(50%);
+  @apply w-[30vw] h-[600px] right-[1vw] overflow-hidden p-[50px] brightness-[0.5];
 }
 
 #donghua-highlight {
-  width: 400px;
-  filter: opacity(20%);
-  -webkit-filter: opacity(20%);
+  @apply w-[400px] opacity-20;
 }
 
 #image-card-anime {
-  width: 120px;
-  height: 150px;
-  filter: opacity(45%);
-  -webkit-filter: opacity(45%);
+  @apply w-[120px] h-[150px] opacity-45;
 }
 
 #image-card-anime:hover {
-  filter: opacity(25%);
-  -webkit-filter: opacity(25%);
+  @apply opacity-25;
 }
-
-
-
-
 
