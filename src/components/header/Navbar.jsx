@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
           <Link
             href={"/"}
-            className="hidden sm:flex font-bold text-xl md:text-2xl lg:text-3xl tracking-widest"
+            className="hidden sm:flex font-bold text-xl md:text-2xl tracking-widest"
           >
             Arnisekai
           </Link>
@@ -38,13 +38,13 @@ const Navbar = () => {
         <section className="flex gap-3 items-center text-white">
           <Link
             href={"/anime"}
-            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 ${router.pathname === "/anime" ? "bg-red-500" : "bg-blue-600 hover:bg-blue-50"} w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center`}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-50 w-24 h-10  items-center rounded-md justify-center`}
             aria-current="page">
               Anime
           </Link>
           <Link
             href={"/donghua"}
-            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-50 w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center ${router.pathname === "/donghua" ? "bg-red-500" : ""}`}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-50 w-24 h-10  items-center rounded-md justify-center`}
           >
               Donghua
           </Link>

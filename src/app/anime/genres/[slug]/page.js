@@ -1,17 +1,27 @@
 "use client";
 import Navbar from "@/components/header/Navbar";
 import { CardAnime } from "@/components/main/Card";
-
-const slugGenre = async ({ params }) => {
+import { useState, useEffect } from "react";
+const slugGenre = ({ params }) => {
   const { slug } = params;
-  const API_BASE = `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/genres/${slug}`;
-  const API_FETCH = await fetch(API_BASE);
-  const api = await API_FETCH.json();
+  const [animeList, setAnimeList] = useState({ data: { anime: [] } }); // Menginisialisasi animeList sebagai objek dengan properti data berupa objek dengan properti anime berupa array kosong
+
+  useEffect(() => {
+    const fetchAnimeList = async () => {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/genres/${slug}`
+      );
+      const data = await response.json();
+      setAnimeList(data);
+    };
+
+    fetchAnimeList();
+  }, []);
 
   return (
     <>
       <main className="min-h-screen pb-10 bg-gray-900 text-gray-300">
-      <Navbar />
+        <Navbar />
         <section className="p-4">
           <div className="flex justify-between items-center mb-4">
             {params ? (
@@ -21,7 +31,7 @@ const slugGenre = async ({ params }) => {
             ) : null}
           </div>
           <CardAnime
-            api={api.data.anime}
+            api={animeList.data.anime}
             simbolRate={"💫"}
             episode={" Episode"}
           />

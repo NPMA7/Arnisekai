@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 
-export const CardAnime = ({ api, simbolRate, episode }) => {
+export const CardAnime = ({ api, simbolRate, episode, rr }) => {
+
   return (
     <>
       <main className="min-h-screen bg-gray-900 text-gray-300">
         <section className="p-4 ">
-            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {api?.map((anime) => (
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {api.map((anime)  => (
                 <Link href={`/anime/${anime.slug}`} key={anime.title} className="bg-gray-800 hover:bg-green-800 p-4 rounded-lg">
                   <img
                     src={anime.poster}

@@ -35,7 +35,7 @@ const genreAnime = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {animeList?.map((anime) => (
+            {animeList.map((anime) => (
               <Link href={`genres/${anime.slug}`} className="h-16 text-md bg-gray-800 p-5 hover:bg-gray-600 rounded-lg font-semibold">
                 {anime.name}
               </Link>

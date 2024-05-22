@@ -6,19 +6,20 @@
   import { Pagination } from "@/utilities/pagination/Pagination";
   
   const completeAnime = () => {
-    const [animeList, setAnimeList] = useState([]);
     const [page, setPage] = useState(1);
+    const [animeList, setAnimeList] = useState({ data: [] }); // Menginisialisasi animeList sebagai objek dengan properti data berupa array kosong
   
     useEffect(() => {
-      const fetchAnime = async () => {
+      const fetchAnimeList = async () => {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/Complete-anime/${page}`
+          `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/complete-anime/${page}`
         );
         const data = await response.json();
         setAnimeList(data);
       };
-      fetchAnime();
-    }, [page]); // Menambahkan [page] sebagai dependency agar fetchAnime dipanggil ulang saat nilai page berubah
+  
+      fetchAnimeList();
+    }, [page]);
   
     return (
       <>

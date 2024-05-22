@@ -1,9 +1,7 @@
 "use client"
-import { useState } from "react";
 import Link from "next/link";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -30,37 +28,17 @@ const Header = () => {
         <section className="flex gap-3 items-center text-white">
           <Link
             href={"/anime"}
-            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center`}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 w-24 h-10 items-center rounded-md justify-center`}
             aria-current="page">
               Anime
           </Link>
           <Link
             href={"/donghua"}
-            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 w-24 h-10 lg:w-40 lg:h-14 items-center rounded-md justify-center`}
+            className={`font-bold text-xs md:text-sm tracking-widest flex border border-black hover:text-blue-600 bg-blue-600 hover:bg-blue-400 w-24 h-10 items-center rounded-md justify-center`}
           >
               Donghua
           </Link>
         </section>
-
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="sm:hidden text-gray-300 hover:text-white"
-        >
-          <svg
-            className="h-8 w-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
       </header>
     </>
   );
