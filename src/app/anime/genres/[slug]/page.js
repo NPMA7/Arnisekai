@@ -2,21 +2,24 @@
 import Navbar from "@/components/header/Navbar";
 import { CardAnime } from "@/components/main/Card";
 import { useState, useEffect } from "react";
+import { Pagination } from "@/utilities/pagination/Pagination";
+
 const slugGenre = ({ params }) => {
+  const [page, setPage] = useState(1);
   const { slug } = params;
   const [animeList, setAnimeList] = useState({ data: { anime: [] } }); // Menginisialisasi animeList sebagai objek dengan properti data berupa objek dengan properti anime berupa array kosong
 
   useEffect(() => {
     const fetchAnimeList = async () => {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/genres/${slug}`
+        `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/genres/${slug}/${page}`
       );
       const data = await response.json();
       setAnimeList(data);
     };
 
     fetchAnimeList();
-  }, []);
+  }, [page]);
 
   return (
     <>
@@ -36,6 +39,7 @@ const slugGenre = ({ params }) => {
             episode={" Episode"}
           />
         </section>
+        <Pagination api={animeList.data} page={page} setPage={setPage} />
       </main>
     </>
   );

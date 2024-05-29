@@ -1,7 +1,6 @@
 "use client";
 import Navbar from "@/components/header/Navbar";
 import { CardAnime } from "@/components/main/Card";
-import { useState, useEffect } from "react";
 const searchAnime = async ({ params }) => {
   const { keyword } = params;
 

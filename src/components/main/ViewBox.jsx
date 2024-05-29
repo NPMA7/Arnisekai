@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-export const ViewBox = ({ api }) => {
+export const ViewBox = ({ api, slugAPI}) => {
   const generateStar = (rating) => {
     const filledStars = "★".repeat(Math.floor(rating));
     const emptyStars = "☆".repeat(Math.max(0, 10 - Math.floor(rating)));
@@ -93,9 +93,9 @@ export const ViewBox = ({ api }) => {
               </details>
               <details className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 border-red bg-gray-800 p-4 mt-5 w-full rounded-lg">
                 <summary className="font-bold text-lg">Episode Lists</summary>
-                {anime.data.episode_lists.map((episode) => (
-                  <span key={episode.slug} className="mt-2 my-5 ">
-                    {/* <Link href={episode.otakudesu_url}>{episode.episode}</Link> */}
+                {anime.data.episode_lists.map((episode, index) => (
+                  <span key={index} className="mt-2 my-5 ">
+                    <Link href={`/anime/${slugAPI}/episodes/${index + 1}`}>{episode.episode} </Link>
                   </span>
                 ))}
               </details>

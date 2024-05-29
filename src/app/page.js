@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 import Header from "@/components/header/Header";
 import Highlight from "@/components/main/Highlight";
 
 const Home = () => {
   const [animeList, setAnimeList] = useState();
   const searchRef = useRef();
+  const router = useRouter();
 
   useEffect(() => {
     const fetchAnime = async () => {
