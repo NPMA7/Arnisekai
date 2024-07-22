@@ -1,10 +1,25 @@
-import Test from "."
+"use client";
+import React, { useState, useEffect } from "react";
+const Test =() => {
+    const [animeList, setAnimeList] = useState({ data: { ongoing_anime: [], complete_anime: [] } });
 
-const Testing =() => {
+    useEffect(() => {
+      const fetchAnimeList = async () => {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}`
+        );
+        const data = await response.json();
+        setAnimeList(data);
+      };
+  
+      fetchAnimeList();
+    }, []);
+    
+    console.log(animeList)
 return (
     <div className="">
-            <Test/>
+         ini
     </div>
 )
 }
-export default Testing
+export default Test
