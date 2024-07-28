@@ -7,21 +7,33 @@ import Header from "@/components/header/Header";
 import Highlight from "@/components/main/Highlight";
 
 const Home = () => {
-  const [animeList, setAnimeList] = useState();
+  const apiKeys = 'abcdefghijklmnopqrstuvwxyz';
+
+  const [animeList, setAnimeList] = useState([]);
   const searchRef = useRef();
   const router = useRouter();
 
   useEffect(() => {
     const fetchAnime = async () => {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing-anime`
-      );
-      const data = await response.json();
-      setAnimeList(data.data);
+      try {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_BASE_URL_ANIME}/ongoing`,
+          {
+            method: 'GET',
+            headers: {
+              'x-api-key': apiKeys,
+              'Content-Type': 'application/json'
+            }
+          }
+        );
+        const data = await response.json();
+        setAnimeList(data.data);
+      } catch (error) {
+        console.error('Error fetching anime data:', error);
+      }
     };
     fetchAnime();
   }, []); 
-
 
   return (
     <>
