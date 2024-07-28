@@ -7,8 +7,8 @@ import Header from "@/components/header/Header";
 import Highlight from "@/components/main/Highlight";
 
 const Home = () => {
-  const apiKeys = 'abcdefghijklmnopqrstuvwxyz';
 
+  const apiKeys = 'abcdefghijklmnopqrstuvwxyz';
   const [animeList, setAnimeList] = useState([]);
   const searchRef = useRef();
   const router = useRouter();
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header/>
       <main className="p-5 bg-gray-900 min-w-screen md:w-3/5">
       <sidebar id="highlight" className=" text-gray-300">
         <section
